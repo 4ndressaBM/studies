@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Blue View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="studies" customModuleProvider="target" sceneMemberID="viewController">
@@ -54,7 +54,7 @@
                             <constraint firstItem="Wsj-Wp-afw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tWV-Mf-cft"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="fF8-pl-kkk"/>
+                    <navigationItem key="navigationItem" title="Blue View" id="fF8-pl-kkk"/>
                     <connections>
                         <segue destination="csW-iA-F5V" kind="show" identifier="goScreenTwo" id="gu7-ZK-OCN"/>
                         <segue destination="LrY-DE-zfk" kind="show" identifier="goScreenThree" id="7am-Vr-0fP"/>
@@ -64,7 +64,7 @@
             </objects>
             <point key="canvasLocation" x="886.95652173913049" y="-4.0178571428571423"/>
         </scene>
-        <!--View Controller-->
+        <!--Purple View-->
         <scene sceneID="zL6-qU-Vfh">
             <objects>
                 <viewController id="LrY-DE-zfk" sceneMemberID="viewController">
@@ -74,13 +74,13 @@
                         <viewLayoutGuide key="safeArea" id="Wq6-OS-yhW"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="XHK-ot-D1R"/>
+                    <navigationItem key="navigationItem" title="Purple View" id="XHK-ot-D1R"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="it8-XX-VQs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2134.7826086956525" y="375.66964285714283"/>
         </scene>
-        <!--View Controller-->
+        <!--Orange View-->
         <scene sceneID="5QN-U5-MRd">
             <objects>
                 <viewController id="csW-iA-F5V" sceneMemberID="viewController">
@@ -91,7 +91,7 @@
                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" id="qOa-N5-NCH"/>
+                    <navigationItem key="navigationItem" title="Orange View" id="qOa-N5-NCH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rLz-h8-GfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
