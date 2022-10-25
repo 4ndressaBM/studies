@@ -26,37 +26,39 @@
                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="goScreenTwoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n78-Fk-K5E"/>
+                                    <action selector="goScreenTwoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ovu-xK-d7M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1l-3u-maT">
+                                <rect key="frame" x="174" y="487.5" width="66" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Purple">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goScreenThreeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jZn-4T-Jhr"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="tintColor"/>
                         <constraints>
+                            <constraint firstItem="v1l-3u-maT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8Lp-Po-wId"/>
                             <constraint firstItem="Wsj-Wp-afw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Hu-Rr-Vfk"/>
                             <constraint firstItem="Wsj-Wp-afw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QRn-3f-4or"/>
                             <constraint firstItem="Wsj-Wp-afw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S40-Ad-h04"/>
+                            <constraint firstItem="v1l-3u-maT" firstAttribute="top" secondItem="Wsj-Wp-afw" secondAttribute="bottom" constant="24" id="siT-SD-xk7"/>
                             <constraint firstItem="Wsj-Wp-afw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tWV-Mf-cft"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Blue View" id="fF8-pl-kkk"/>
-                    <connections>
-                        <segue destination="Ggn-yA-VET" kind="show" identifier="goScreenTwo" id="e3t-pY-cde"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="886.95652173913049" y="-4.0178571428571423"/>
-        </scene>
-        <!--ScreenTwoViewController-->
-        <scene sceneID="cBQ-jD-LeQ">
-            <objects>
-                <viewControllerPlaceholder storyboardName="ScreenTwoViewController" id="Ggn-yA-VET" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="RT9-Mh-drk"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wLK-WY-89S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1538" y="-108"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="k9c-Eh-feb">
@@ -83,6 +85,9 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

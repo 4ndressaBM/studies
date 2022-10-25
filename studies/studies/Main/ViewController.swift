@@ -13,10 +13,16 @@ class ViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    // Creating new view as MODAL (present)
     @IBAction func goScreenTwoButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "goScreenTwo", sender: nil)
+        let screenTwoViewController = UIStoryboard(name: "ScreenTwoStoryboard", bundle: nil).instantiateViewController(withIdentifier: "ScreenTwoStoryboard") as? ScreenTwoViewController
+        present(screenTwoViewController ?? UIViewController(), animated: true)
     }
-    // identifier is from screen
-    // sender is a way to sand info to another screen
+    
+    // Creating new view as NAVIGATION/ROOT (pushViewController)
+    @IBAction func goScreenThreeButton(_ sender: UIButton) {
+        let screenThreeViewController = UIStoryboard(name: "ScreenThreeStoryboard", bundle: nil).instantiateViewController(withIdentifier: "ScreenThreeStoryboard") as? ScreenThreeViewController
+        navigationController?.pushViewController(screenThreeViewController ?? UIViewController(), animated: true)
+    }
 }
 
