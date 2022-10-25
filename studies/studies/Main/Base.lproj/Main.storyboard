@@ -17,9 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsj-Wp-afw">
-                                <rect key="frame" x="171" y="432.5" width="72" height="31"/>
+                                <rect key="frame" x="175.5" y="432.5" width="63" height="31"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Orange">
+                                <buttonConfiguration key="configuration" style="plain" title="Green">
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </backgroundConfiguration>
@@ -29,73 +29,34 @@
                                     <action selector="goScreenTwoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n78-Fk-K5E"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cf1-bC-gev">
-                                <rect key="frame" x="174" y="505.5" width="66" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Purple">
-                                    <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                    </backgroundConfiguration>
-                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="goScreenThreeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RYu-7R-ZMW"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="tintColor"/>
                         <constraints>
-                            <constraint firstItem="cf1-bC-gev" firstAttribute="top" secondItem="Wsj-Wp-afw" secondAttribute="bottom" constant="42" id="6D9-39-uMI"/>
                             <constraint firstItem="Wsj-Wp-afw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9Hu-Rr-Vfk"/>
                             <constraint firstItem="Wsj-Wp-afw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QRn-3f-4or"/>
                             <constraint firstItem="Wsj-Wp-afw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S40-Ad-h04"/>
-                            <constraint firstItem="cf1-bC-gev" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ory-8J-LcA"/>
                             <constraint firstItem="Wsj-Wp-afw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tWV-Mf-cft"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Blue View" id="fF8-pl-kkk"/>
                     <connections>
-                        <segue destination="csW-iA-F5V" kind="show" identifier="goScreenTwo" id="gu7-ZK-OCN"/>
-                        <segue destination="LrY-DE-zfk" kind="show" identifier="goScreenThree" id="7am-Vr-0fP"/>
+                        <segue destination="Ggn-yA-VET" kind="show" identifier="goScreenTwo" id="e3t-pY-cde"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="886.95652173913049" y="-4.0178571428571423"/>
         </scene>
-        <!--Purple View-->
-        <scene sceneID="zL6-qU-Vfh">
+        <!--ScreenTwoViewController-->
+        <scene sceneID="cBQ-jD-LeQ">
             <objects>
-                <viewController id="LrY-DE-zfk" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="SwM-PK-vYJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Wq6-OS-yhW"/>
-                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Purple View" id="XHK-ot-D1R"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="it8-XX-VQs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="ScreenTwoViewController" id="Ggn-yA-VET" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="RT9-Mh-drk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wLK-WY-89S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2134.7826086956525" y="375.66964285714283"/>
-        </scene>
-        <!--Orange View-->
-        <scene sceneID="5QN-U5-MRd">
-            <objects>
-                <viewController id="csW-iA-F5V" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WvO-GB-ih7">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="Mdn-Ki-Lge"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Orange View" id="qOa-N5-NCH"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rLz-h8-GfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2134.7826086956525" y="-335.49107142857139"/>
+            <point key="canvasLocation" x="1538" y="-108"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="k9c-Eh-feb">
@@ -122,12 +83,6 @@
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -18,10 +18,5 @@ class ViewController: UIViewController {
     }
     // identifier is from screen
     // sender is a way to sand info to another screen
-    
-    @IBAction func goScreenThreeButton(_ sender: UIButton) {
-        performSegue(withIdentifier: "goScreenThree", sender: nil)
-    }
-    
 }
 
